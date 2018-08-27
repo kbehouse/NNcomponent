@@ -1,0 +1,27 @@
+NN: 
+    1_conv: 
+        type: 'conv'
+        kernel_size: 3
+        out_channel: 32
+        stride: 2 
+    2_maxpool:
+        type: 'maxpool'
+    3_conv: 
+        type: 'conv'
+        kernel_size: 3
+        out_channel: 64 
+        stride: 2
+    4_maxpool:
+        type: 'maxpool'
+    6_flatten:
+        type: 'flatten'
+    7_fc:
+        type: 'fc'
+        size: 1024
+    8_dropout:
+        type: 'dropout'
+        keep_prob: 0.76
+    9_predict:
+        type: 'fc'
+        size: 10
+        op: 'softmax'
