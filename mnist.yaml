@@ -13,15 +13,15 @@ NN:
         stride: 2
     4_maxpool:
         type: 'maxpool'
-    6_flatten:
+    5_flatten:
         type: 'flatten'
-    7_fc:
+    6_fc:
         type: 'fc'
         size: 1024
-    8_dropout:
+    7_dropout:
         type: 'dropout'
         keep_prob: 0.76
-    9_predict:
+    8_predict:
         type: 'fc'
         size: 10
         op: 'softmax'
